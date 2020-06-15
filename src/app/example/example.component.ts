@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { EmailEditorComponent } from 'email-editor';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {EmailEditorComponent} from 'email-editor';
 
 import sample from './sample.json';
 
@@ -18,7 +18,7 @@ export class ExampleComponent implements OnInit {
   ngOnInit() {
   }
 
-  @ViewChild('editor')
+  @ViewChild('editor', {static: false})
   private emailEditor: EmailEditorComponent;
 
   editorLoaded(event) {
